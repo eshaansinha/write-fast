@@ -27,10 +27,10 @@ const Hero = () => {
             <div className='m-20 sm:m-20 flex flex-col justify-center items-center text-center'>
                 <div className='flex flex-col justify-center bg-amber-300 w-[350px] sm:w-[500px] rounded-2xl'>
                     <div className='p-8 sm:p-10 flex justify-center'>
-                        <input type='text' value={data} onChange={(e) => setData(e.target.value)} className='bg-white flex text-sm sm:text-md font-bold w-[350px] sm:w-[400px] p-2 rounded-2xl' placeholder='Write one thing you loved about the book'/>
+                        <input type='text' value={data} onChange={(e) => setData(e.target.value)} className='bg-white flex text-sm sm:text-lg font-bold w-[350px] sm:w-[400px] p-2 rounded-2xl' placeholder='Write one thing you loved about the book'/>
                     </div>
                     <div className='pb-8 sm:pb-10'>
-                        <button onClick={() => {getReview()}} className='bg-white active:translate-y-2 hover:translate-y-1 transition duration-300 text-black font-extrabold text-md sm:text-xl rounded-2xl pt-2 pb-2 pl-5 pr-5'>Generate</button>
+                        <button onClick={() => {getReview()}} className='bg-white active:translate-y-2 hover:translate-y-1 transition duration-300 text-black font-extrabold text-md sm:text-2xl rounded-2xl pt-2 pb-2 pl-5 pr-5'>Generate</button>
                     </div>
                 </div>
                 <div className='flex flex-col mt-12 sm:mt-20'>
