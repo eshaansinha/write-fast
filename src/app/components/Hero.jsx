@@ -9,7 +9,7 @@ const Hero = () => {
 
     const getReview = async() => {
 
-        const response = await fetch(`https://write-fast-chi.vercel.app/api?data=${data}`)
+        const response = await fetch(`https://short-review.vercel.app/api?data=${data}`)
 
         const dataAPI = await response.json()
 
