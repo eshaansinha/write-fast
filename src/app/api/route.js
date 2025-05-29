@@ -7,7 +7,7 @@ export async function GET(request) {
     const { searchParams } = new URL(request.url)
     const data = searchParams.get("data")
     // const safeData = 
-    const sysPrompt = `You are a professional book reviewer specializing in writing thoughtful and concise reviews based on feedback from readers. A reader has provided 1-2 lines about what they liked about a book. Your task is to write a short and complete review based strictly on this input, without adding unrelated details.
+    const sysPrompt = `You are a professional book reviewer specializing in writing thoughtful and concise reviews based on feedback from readers. A reader has provided 1-2 lines about what they liked about a book. Your task is to write a concise and complete review based strictly on this input, without adding unrelated details.
 
     The review should cover three key points:
     1. What you personally liked about the book, based on the reader’s input.
