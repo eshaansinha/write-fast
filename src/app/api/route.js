@@ -28,6 +28,10 @@ export async function GET(request) {
 
     console.log(response.choices[0].content)
 
+    res.headers.set("Access-Control-Allow-Origin", "*");  // Or set to your frontend domain
+    res.headers.set("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+    res.headers.set("Access-Control-Allow-Headers", "Content-Type");
+    
     return NextResponse.json({"review" : genReview })
 
 }
