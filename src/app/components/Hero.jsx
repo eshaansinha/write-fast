@@ -34,7 +34,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className='flex flex-col mt-12 sm:mt-20'>
-                    <h1 className='text-black text-2xl sm:text-4xl font-extrabold underline'>Your Review Shows Up Here</h1>
+                    <h1 className='text-black text-2xl sm:text-4xl font-extrabold underline'>Your Review Shows Up Below</h1>
                     <div className='bg-amber-300 italic text-black p-3 rounded-2xl mt-10 w-[350px] sm:w-[800px] text-md sm:text-lg font-bold'>
                         <ReactTyped strings={[JSON.stringify(review)]} typeSpeed={40}/>
                     </div>
