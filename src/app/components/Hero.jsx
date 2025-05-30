@@ -9,7 +9,7 @@ const Hero = () => {
 
     const getReview = async() => {
 
-        const response = await fetch(`https://short-review.vercel.app/api?data=${data}`)
+        const response = await fetch(`/api?data=${data}`)
 
         const dataAPI = await response.json()
 
@@ -35,6 +35,7 @@ const Hero = () => {
                 </div>
                 <div className='flex flex-col mt-12 sm:mt-20'>
                     <h1 className='text-black text-2xl sm:text-4xl font-extrabold underline'>Your Review Shows Up Below</h1>
+                    <p className='italic text-sm sm:text-lg mt-1 sm:mt-3'>(Takes 5 seconds)</p>
                     <div className='bg-amber-300 italic text-black p-3 rounded-2xl mt-10 w-[350px] sm:w-[800px] text-md sm:text-lg font-bold'>
                         <ReactTyped strings={[JSON.stringify(review)]} typeSpeed={40}/>
                     </div>
