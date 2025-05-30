@@ -41,6 +41,9 @@ const Hero = () => {
                     <div>
                         <button onClick={() => {handleCopy()}}className='mt-5 bg-amber-300 active:translate-y-2 hover:translate-y-1 transition duration-300 text-black font-bold text-md sm:text-lg rounded-2xl pt-2 pb-2 pl-5 pr-5 italic'>Copy</button>
                     </div>
+                    <div className='text-black mt-5 italic'>
+                        <h1>Note : After copying the review you can directly paste it on Amazon!</h1>
+                    </div>
                 </div>
             </div>
         </div>
